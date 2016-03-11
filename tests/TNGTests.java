@@ -1,12 +1,10 @@
-import org.testng.Assert;
-import org.testng.annotations.Test;
-
-//import org.junit.Assert;
-//import org.junit.Test;
-
 /**
  * Created by Сергей on 05.03.2015.
  */
+
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
 public class TNGTests {
 
     @Test
