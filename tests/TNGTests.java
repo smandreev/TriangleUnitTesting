@@ -32,7 +32,7 @@ public class TNGTests {
     public void test4() {
         int[] testArr = {1, -1, 1};
         Triangle testTr = new Triangle();
-        Assert.assertTrue("Разносторонний".equals(testTr.TypeOfTriangle(testArr)), "Пиздец какой-то");
+        Assert.assertFalse("Разносторонний".equals(testTr.TypeOfTriangle(testArr)), "Что-то пошло не так");
     }
 
 }
