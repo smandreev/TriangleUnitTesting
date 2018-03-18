@@ -6,16 +6,18 @@
 public class Triangle {
 
     String TypeOfTriangle(int[] sides) {
-        String result = "Треугольник не существует";
+        String result = "Треугольник не треугольник";
         int a, b, c;
         boolean isTriangle = false;
         a = sides[0];
         b = sides[1];
-        c = sides[1];
+        c = sides[2];
 
         for (int side : sides) {
-            if (side <= 0)
+            if (side <= 0) {
+                result = "Треугольник не существует";
                 return result;
+            }
         }
 
         if ((a <= b + c) && (b <= a + c) && (a <= a + c)) {
